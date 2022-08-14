@@ -1,0 +1,267 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/lib/Bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <title>Tabla periódica</title>
+  </head>
+  <body>
+    <h1 class="text-center mt-5 mb-5">Tabla Periódica de los Elementos Químicos</h1>
+    <div class="my-container">
+      <!-- Row1 -->
+      {{#each (ValidateRow1 elements.row1)}}
+        {{#if (IsEqual this.group "deleted")}}
+          <div class="elements border border-white border-4 fw-bold fs-4 bg-secondary bg-opacity-75"><span></span></div>
+        {{else}}
+        {{#if (IsEqual this.group "otrosNoMetales")}}
+          <div class="elements border border-white border-4 fw-bold fs-4 bg-success bg-opacity-50"><span>{{this.symbol}}</span></div>
+        {{else}}
+        {{#if (IsEqual this.group "gasesNobles")}}
+          <div class="elements border border-white border-4 fw-bold fs-4 bg-primary bg-opacity-25"><span>{{this.symbol}}</span></div>
+        {{/if}}
+        {{/if}}
+        {{/if}}
+      {{/each}}
+      <!-- Row2 -->
+      {{#each (ValidateRow2 elements.row2)}}
+        {{#if (IsEqual this.group "deleted")}}
+          <div class="elements border border-white border-4 fw-bold fs-4 bg-secondary bg-opacity-75"><span></span></div>
+        {{else}}
+        {{#if (IsEqual this.group "alcalinos")}}
+          <div class="elements border border-white border-4 fw-bold fs-4 bg-danger bg-opacity-50"><span>{{this.symbol}}</span></div>
+        {{else}}
+        {{#if (IsEqual this.group "alcalinoTerreos")}}
+          <div class="elements border border-white border-4 fw-bold fs-4 bg-danger bg-opacity-25"><span>{{this.symbol}}</span></div>
+        {{else}}
+        {{#if (IsEqual this.group "metaloides")}}
+          <div class="elements border border-white border-4 fw-bold fs-4 bg-warning bg-opacity-25"><span>{{this.symbol}}</span></div>
+        {{else}}
+        {{#if (IsEqual this.group "otrosNoMetales")}}
+          <div class="elements border border-white border-4 fw-bold fs-4 bg-success bg-opacity-50"><span>{{this.symbol}}</span></div>
+        {{else}}
+        {{#if (IsEqual this.group "halogenos")}}
+          <div class="elements border border-white border-4 fw-bold fs-4 bg-info bg-opacity-25"><span>{{this.symbol}}</span></div>
+        {{else}}
+          <div class="elements border border-white border-4 fw-bold fs-4 bg-primary bg-opacity-25"><span>{{this.symbol}}</span></div>
+        {{/if}}
+        {{/if}}
+        {{/if}}
+        {{/if}}
+        {{/if}}
+        {{/if}}
+      {{/each}}
+      <!--Row 3-->
+      {{#each (ValidateRow3 elements.row3)}}
+        {{#if (IsEqual this.group "deleted")}}
+          <div class="elements border border-white border-4 fw-bold fs-4 bg-secondary bg-opacity-75"><span></span></div>
+        {{else}}
+        {{#if (IsEqual this.group "alcalinos")}}
+          <div class="elements border border-white border-4 fw-bold fs-4 bg-danger bg-opacity-50"><span>{{this.symbol}}</span></div>
+        {{else}}
+        {{#if (IsEqual this.group "alcalinoTerreos")}}
+          <div class="elements border border-white border-4 fw-bold fs-4 bg-danger bg-opacity-25"><span>{{this.symbol}}</span></div>
+        {{else}}
+        {{#if (IsEqual this.group "metaloides")}}
+          <div class="elements border border-white border-4 fw-bold fs-4 bg-warning bg-opacity-25"><span>{{this.symbol}}</span></div>
+        {{else}}
+        {{#if (IsEqual this.group "otrosNoMetales")}}
+          <div class="elements border border-white border-4 fw-bold fs-4 bg-success bg-opacity-50"><span>{{this.symbol}}</span></div>
+        {{else}}
+        {{#if (IsEqual this.group "halogenos")}}
+          <div class="elements border border-white border-4 fw-bold fs-4 bg-info bg-opacity-25"><span>{{this.symbol}}</span></div>
+        {{else}}
+        {{#if (IsEqual this.group "gasesNobles")}}
+          <div class="elements border border-white border-4 fw-bold fs-4 bg-primary bg-opacity-25"><span>{{this.symbol}}</span></div>
+        {{else}}
+        <div class="elements border border-white border-4 fw-bold fs-4 bg-warning bg-opacity-50"><span>{{this.symbol}}</span></div>
+        {{/if}}
+        {{/if}}
+        {{/if}}
+        {{/if}}
+        {{/if}}
+        {{/if}}
+        {{/if}}
+      {{/each}}
+      <!--Row4-->
+      {{#each (ValidateRow4 elements.row4)}}
+        {{#if (IsEqual this.group "deleted")}}
+          <div class="elements border border-white border-4 fw-bold fs-4 bg-secondary bg-opacity-75"><span></span></div>
+        {{else}}
+        {{#if (IsEqual this.group "alcalinos")}}
+          <div class="elements border border-white border-4 fw-bold fs-4 bg-danger bg-opacity-50"><span>{{this.symbol}}</span></div>
+        {{else}}
+        {{#if (IsEqual this.group "alcalinoTerreos")}}
+          <div class="elements border border-white border-4 fw-bold fs-4 bg-danger bg-opacity-25"><span>{{this.symbol}}</span></div>
+        {{else}}
+        {{#if (IsEqual this.group "metaloides")}}
+          <div class="elements border border-white border-4 fw-bold fs-4 bg-warning bg-opacity-25"><span>{{this.symbol}}</span></div>
+        {{else}}
+        {{#if (IsEqual this.group "otrosNoMetales")}}
+          <div class="elements border border-white border-4 fw-bold fs-4 bg-success bg-opacity-50"><span>{{this.symbol}}</span></div>
+        {{else}}
+        {{#if (IsEqual this.group "halogenos")}}
+          <div class="elements border border-white border-4 fw-bold fs-4 bg-info bg-opacity-25"><span>{{this.symbol}}</span></div>
+        {{else}}
+        {{#if (IsEqual this.group "gasesNobles")}}
+          <div class="elements border border-white border-4 fw-bold fs-4 bg-primary bg-opacity-25"><span>{{this.symbol}}</span></div>
+        {{else}}
+        {{#if (IsEqual this.group "metalesDeTransicion")}}
+          <div class="elements border border-white border-4 fw-bold fs-4 bg-warning bg-opacity-75"><span>{{this.symbol}}</span></div>
+        {{else}}
+        <div class="elements border border-white border-4 fw-bold fs-4 bg-warning bg-opacity-50"><span>{{this.symbol}}</span></div>
+        {{/if}}
+        {{/if}}
+        {{/if}}
+        {{/if}}
+        {{/if}}
+        {{/if}}
+        {{/if}}
+        {{/if}}
+      {{/each}}
+      <!--Row5-->
+      {{#each (ValidateRow5 elements.row5)}}
+        {{#if (IsEqual this.group "deleted")}}
+          <div class="elements border border-white border-4 fw-bold fs-4 bg-secondary bg-opacity-75"><span></span></div>
+        {{else}}
+        {{#if (IsEqual this.group "alcalinos")}}
+          <div class="elements border border-white border-4 fw-bold fs-4 bg-danger bg-opacity-50"><span>{{this.symbol}}</span></div>
+        {{else}}
+        {{#if (IsEqual this.group "alcalinoTerreos")}}
+          <div class="elements border border-white border-4 fw-bold fs-4 bg-danger bg-opacity-25"><span>{{this.symbol}}</span></div>
+        {{else}}
+        {{#if (IsEqual this.group "metaloides")}}
+          <div class="elements border border-white border-4 fw-bold fs-4 bg-warning bg-opacity-25"><span>{{this.symbol}}</span></div>
+        {{else}}
+        {{#if (IsEqual this.group "halogenos")}}
+          <div class="elements border border-white border-4 fw-bold fs-4 bg-info bg-opacity-25"><span>{{this.symbol}}</span></div>
+        {{else}}
+        {{#if (IsEqual this.group "gasesNobles")}}
+          <div class="elements border border-white border-4 fw-bold fs-4 bg-primary bg-opacity-25"><span>{{this.symbol}}</span></div>
+        {{else}}
+        {{#if (IsEqual this.group "metalesDeTransicion")}}
+          <div class="elements border border-white border-4 fw-bold fs-4 bg-warning bg-opacity-75"><span>{{this.symbol}}</span></div>
+        {{else}}
+        <div class="elements border border-white border-4 fw-bold fs-4 bg-warning bg-opacity-50"><span>{{this.symbol}}</span></div>
+        {{/if}}
+        {{/if}}
+        {{/if}}
+        {{/if}}
+        {{/if}}
+        {{/if}}
+        {{/if}}
+      {{/each}}
+      <!--Row6-->
+      {{#each (ValidateRow6 elements.row6)}}
+        {{#if (IsEqual this.group "deleted")}}
+          <div class="elements border border-white border-4 fw-bold fs-4 bg-secondary bg-opacity-75"><span></span></div>
+        {{else}}
+        {{#if (IsEqual this.group "alcalinos")}}
+          <div class="elements border border-white border-4 fw-bold fs-4 bg-danger bg-opacity-50"><span>{{this.symbol}}</span></div>
+        {{else}}
+        {{#if (IsEqual this.group "alcalinoTerreos")}}
+          <div class="elements border border-white border-4 fw-bold fs-4 bg-danger bg-opacity-25"><span>{{this.symbol}}</span></div>
+        {{else}}
+        {{#if (IsEqual this.group "metaloides")}}
+          <div class="elements border border-white border-4 fw-bold fs-4 bg-warning bg-opacity-25"><span>{{this.symbol}}</span></div>
+        {{else}}
+        {{#if (IsEqual this.group "metalesDeTransicion")}}
+          <div class="elements border border-white border-4 fw-bold fs-4 bg-warning bg-opacity-75"><span>{{this.symbol}}</span></div>
+        {{else}}
+        {{#if (IsEqual this.group "halogenos")}}
+          <div class="elements border border-white border-4 fw-bold fs-4 bg-info bg-opacity-25"><span>{{this.symbol}}</span></div>
+        {{else}}
+        {{#if (IsEqual this.group "gasesNobles")}}
+          <div class="elements border border-white border-4 fw-bold fs-4 bg-primary bg-opacity-25"><span>{{this.symbol}}</span></div>
+        {{else}}
+        {{#if (IsEqual this.group "lantanidos")}}
+          <div class="elements border border-white border-4 fw-bold fs-4 bg-warning"><span>{{this.symbol}}</span></div>
+        {{else}}
+        <div class="elements border border-white border-4 fw-bold fs-4 bg-warning bg-opacity-50"><span>{{this.symbol}}</span></div>
+        {{/if}}
+        {{/if}}
+        {{/if}}
+        {{/if}}
+        {{/if}}
+        {{/if}}
+        {{/if}}
+        {{/if}}
+      {{/each}}
+      <!--Row 7-->
+      {{#each (ValidateRow7 elements.row7)}}
+        {{#if (IsEqual this.group "deleted")}}
+          <div class="elements border border-white border-4 fw-bold fs-4 bg-secondary bg-opacity-75"><span></span></div>
+        {{else}}
+        {{#if (IsEqual this.group "alcalinos")}}
+          <div class="elements border border-white border-4 fw-bold fs-4 bg-danger bg-opacity-50"><span>{{this.symbol}}</span></div>
+        {{else}}
+        {{#if (IsEqual this.group "alcalinoTerreos")}}
+          <div class="elements border border-white border-4 fw-bold fs-4 bg-danger bg-opacity-25"><span>{{this.symbol}}</span></div>
+        {{else}}
+        {{#if (IsEqual this.group "metaloides")}}
+          <div class="elements border border-white border-4 fw-bold fs-4 bg-danger bg-warning bg-opacity-25"><span>{{this.symbol}}</span></div>
+        {{else}}
+        {{#if (IsEqual this.group "metalesDeTransicion")}}
+          <div class="elements border border-white border-4 fw-bold fs-4 bg-warning bg-opacity-75"><span>{{this.symbol}}</span></div>
+        {{else}}
+        {{#if (IsEqual this.group "halogenos")}}
+          <div class="elements border border-white border-4 fw-bold fs-4 bg-info bg-opacity-25"><span>{{this.symbol}}</span></div>
+        {{else}}
+        {{#if (IsEqual this.group "gasesNobles")}}
+          <div class="elements border border-white border-4 fw-bold fs-4 bg-primary bg-opacity-25"><span>{{this.symbol}}</span></div>
+        {{else}}
+        {{#if (IsEqual this.group "actinidos")}}
+          <div class="elements border border-white border-4 fw-bold fs-4 bg-danger bg-opacity-75"><span>{{this.symbol}}</span></div>
+        {{else}}
+        <div class="elements border border-white border-4 fw-bold fs-4 bg-warning bg-opacity-50"><span>{{this.symbol}}</span></div>
+        {{/if}}
+        {{/if}}
+        {{/if}}
+        {{/if}}
+        {{/if}}
+        {{/if}}
+        {{/if}}
+        {{/if}}
+      {{/each}}
+    </div>
+    <div class="my-container-bottom">
+
+      {{#each (ValidateRow8 elements.row8)}}
+        {{#if (IsEqual this.group "deleted")}}
+          <div class="elements border border-white border-4 fw-bold fs-4 bg-secondary bg-opacity-75"><span></span></div>
+        {{else}}
+        {{#if (IsEqual this.group "lantanidos")}}
+          <div class="elements border border-white border-4 fw-bold fs-4 bg-warning"><span>{{this.symbol}}</span></div>
+        {{/if}}
+        {{/if}}
+      {{/each}}
+
+      {{#each (ValidateRow9 elements.row9)}}
+        {{#if (IsEqual this.group "deleted")}}
+          <div class="elements border border-white border-4 fw-bold fs-4 bg-secondary bg-opacity-75"><span></span></div>
+        {{else}}
+        {{#if (IsEqual this.group "actinidos")}}
+          <div class="elements border border-white border-4 fw-bold fs-4 bg-danger bg-opacity-75"><span>{{this.symbol}}</span></div>
+        {{/if}}
+        {{/if}}
+      {{/each}}
+    </div>
+    <div class="col-10 position-absolute start-50 translate-middle-x">
+      <table class="table table-borderless mb-5 mt-5">
+        <tr>
+          <td class="border border-white border-5 text-lg-center bg-danger bg-opacity-50">Alcalinos</td>
+          <td class="border border-white border-5 text-lg-center bg-danger bg-opacity-25">Alcalinotérreos</td>
+          <td class="border border-white border-5 text-lg-center bg-warning bg-opacity-75">Metales de Transición</td>
+          <td class="border border-white border-5 text-lg-center bg-warning">Lantánidos</td>
+          <td class="border border-white border-5 text-lg-center bg-danger bg-opacity-75">Actinidos</td>
+          <td class="border border-white border-5 text-lg-center bg-warning bg-opacity-50">Otros Metales</td>
+          <td class="border border-white border-5 text-lg-center bg-warning bg-opacity-25">Metaloides</td>
+          <td class="border border-white border-5 text-lg-center bg-success bg-opacity-50">Otros No Metales</td>
+          <td class="border border-white border-5 text-lg-center bg-info bg-opacity-25">Halógenos</td>
+          <td class="border border-white border-5 text-lg-center bg-primary bg-opacity-25">Gases Nobles</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,219 @@
+
+    body {
+        background-image: url(../img/back4.webp);
+    }
+
+    div {
+        text-align: center;
+        line-height: 60px;
+    }
+
+  .elements {
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .my-container {
+    display: grid;
+    grid-template-columns: repeat(3, 73px);
+    grid-template-rows: repeat(auto, 73px);
+    justify-content: center;
+  }
+  
+  .my-container-bottom {
+    display: grid;
+    grid-template-columns: repeat(3, 73px);
+    grid-template-rows: repeat(auto, 73px);
+    justify-content: right;
+    margin-top: 40px;
+    margin-right: 100px;
+  }
+  
+
+    .my-container {
+      display: grid;
+      grid-template-columns: repeat(18, 73px);
+      grid-template-rows: repeat(7, 73px);
+      justify-content: center;
+    }
+  
+    .my-container-bottom {
+      display: grid;
+      grid-template-columns: repeat(15, 73px);
+      grid-template-rows: repeat(2, 73px);
+    }
+
+    
+  
+    .my-container .elements:nth-child(1) {
+      grid-column: 1 / 2;
+    }
+  
+    .my-container .elements:nth-child(2) {
+      grid-column: 18 / 19;
+    }
+  
+    .my-container .elements:nth-child(3) {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+    }
+  
+    .my-container .elements:nth-child(4) {
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+    }
+  
+    .my-container .elements:nth-child(5) {
+      grid-column: 13 / 14;
+      grid-row: 2 / 3;
+    }
+  
+    .my-container .elements:nth-child(6) {
+      grid-column: 14 / 15;
+      grid-row: 2 / 3;
+    }
+  
+    .my-container .elements:nth-child(7) {
+      grid-column: 15 / 16;
+      grid-row: 2 / 3;
+    }
+  
+    .my-container .elements:nth-child(8) {
+      grid-column: 16 / 17;
+      grid-row: 2 / 3;
+    }
+  
+    .my-container .elements:nth-child(9) {
+      grid-column: 17 / 18;
+      grid-row: 2 / 3;
+    }
+  
+    .my-container .elements:nth-child(10) {
+      grid-column: 18 / 19;
+      grid-row: 2 / 3;
+    }
+  
+    .my-container .elements:nth-child(11) {
+      grid-column: 1 / 2;
+      grid-row: 3 / 4;
+    }
+  
+    .my-container .elements:nth-child(12) {
+      grid-column: 2 / 3;
+      grid-row: 3 / 4;
+    }
+  
+    .my-container .elements:nth-child(13) {
+      grid-column: 13 / 14;
+      grid-row: 3 / 4;
+    }
+  
+    .my-container .elements:nth-child(14) {
+      grid-column: 14 / 15;
+      grid-row: 3 / 4;
+    }
+  
+    .my-container .elements:nth-child(15) {
+      grid-column: 15 / 16;
+      grid-row: 3 / 4;
+    }
+  
+    .my-container .elements:nth-child(16) {
+      grid-column: 16 / 17;
+      grid-row: 3 / 4;
+    }
+  
+    .my-container .elements:nth-child(17) {
+      grid-column: 17 / 18;
+      grid-row: 3 / 4;
+    }
+  
+    .my-container .elements:nth-child(18) {
+      grid-column: 18 / 19;
+      grid-row: 3 / 4;
+    }
+  
+    .my-container .elements:nth-child(19),
+    .my-container .elements:nth-child(20),
+    .my-container .elements:nth-child(21),
+    .my-container .elements:nth-child(22),
+    .my-container .elements:nth-child(23),
+    .my-container .elements:nth-child(24),
+    .my-container .elements:nth-child(25),
+    .my-container .elements:nth-child(26),
+    .my-container .elements:nth-child(27),
+    .my-container .elements:nth-child(28),
+    .my-container .elements:nth-child(29),
+    .my-container .elements:nth-child(30),
+    .my-container .elements:nth-child(31),
+    .my-container .elements:nth-child(32),
+    .my-container .elements:nth-child(33),
+    .my-container .elements:nth-child(34),
+    .my-container .elements:nth-child(35),
+    .my-container .elements:nth-child(36) {
+      grid-row: 4 / 5;
+    }
+  
+    .my-container .elements:nth-child(37),
+    .my-container .elements:nth-child(38),
+    .my-container .elements:nth-child(39),
+    .my-container .elements:nth-child(40),
+    .my-container .elements:nth-child(41),
+    .my-container .elements:nth-child(42),
+    .my-container .elements:nth-child(43),
+    .my-container .elements:nth-child(44),
+    .my-container .elements:nth-child(45),
+    .my-container .elements:nth-child(46),
+    .my-container .elements:nth-child(47),
+    .my-container .elements:nth-child(48),
+    .my-container .elements:nth-child(49),
+    .my-container .elements:nth-child(50),
+    .my-container .elements:nth-child(51),
+    .my-container .elements:nth-child(52),
+    .my-container .elements:nth-child(53),
+    .my-container .elements:nth-child(54) {
+      grid-row: 5 / 6;
+    }
+  
+    .my-container .elements:nth-child(55),
+    .my-container .elements:nth-child(56),
+    .my-container .elements:nth-child(57),
+    .my-container .elements:nth-child(58),
+    .my-container .elements:nth-child(59),
+    .my-container .elements:nth-child(60),
+    .my-container .elements:nth-child(61),
+    .my-container .elements:nth-child(62),
+    .my-container .elements:nth-child(63),
+    .my-container .elements:nth-child(64),
+    .my-container .elements:nth-child(65),
+    .my-container .elements:nth-child(66),
+    .my-container .elements:nth-child(67),
+    .my-container .elements:nth-child(68),
+    .my-container .elements:nth-child(69),
+    .my-container .elements:nth-child(70),
+    .my-container .elements:nth-child(71),
+    .my-container .elements:nth-child(72) {
+      grid-row: 6 / 7;
+    }
+  
+    .my-container .elements:nth-child(73),
+    .my-container .elements:nth-child(74),
+    .my-container .elements:nth-child(75),
+    .my-container .elements:nth-child(76),
+    .my-container .elements:nth-child(77),
+    .my-container .elements:nth-child(78),
+    .my-container .elements:nth-child(79),
+    .my-container .elements:nth-child(80),
+    .my-container .elements:nth-child(81),
+    .my-container .elements:nth-child(82),
+    .my-container .elements:nth-child(83),
+    .my-container .elements:nth-child(84),
+    .my-container .elements:nth-child(85),
+    .my-container .elements:nth-child(86),
+    .my-container .elements:nth-child(87),
+    .my-container .elements:nth-child(88),
+    .my-container .elements:nth-child(89),
+    .my-container .elements:nth-child(90) {
+      grid-row: 7 / 8;
+    }
+  
